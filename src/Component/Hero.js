@@ -1,21 +1,22 @@
 import { MenuItem } from "./MenuItem";
 
+
 export const Hero = () => {
   const menuItems = [
     {
-      href: "#skills",
+      href: "/skills",
       label: "Skills",
     },
     {
-      href: "#projects",
+      href: "/projects",
       label: "Projects",
     },
     {
-      href: "#about-me",
+      href: "/about-me",
       label: "About-me",
     },
     {
-      href: "#contact",
+      href: "/contact",
       label: "Contact",
     },
   ];

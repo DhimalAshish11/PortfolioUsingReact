@@ -7,18 +7,25 @@ import { Project } from "./Component/Project";
 import { Navigation } from "./Component/Navigation";
 import { ContactMe } from "./Component/ContactMe";
 import { Skills } from "./Component/Skills";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
       {/* <Navigation /> */}
-      <Hero />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/contact" element={<ContactMe />} />
+      </Routes>
 
-      <Project />
+      {/* <Project />
       <Skills />
       <AboutMe />
       <ContactMe />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

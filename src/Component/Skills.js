@@ -1,6 +1,8 @@
+import Layout from "./Layout";
+
 export const Skills = () => {
   return (
-    <>
+    <Layout>
       <div id="skills" class="container py-3 mb-5">
         <div class="row">
           <div class="col">
@@ -25,6 +27,6 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 };

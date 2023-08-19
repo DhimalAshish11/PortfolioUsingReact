@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export const MenuItem = ({ href, label }) => {
   return (
     <>
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href={href}>
+      <li className="nav-item">
+        <Link className="nav-link" aria-current="page" to={href}>
           {label}
-        </a>
+        </Link>
       </li>
     </>
   );
